@@ -1,0 +1,562 @@
+[
+{
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "capital": "St. John's",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag":"https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"
+  },
+{
+    "name": "Argentina",
+    "code": "AR",
+    "capital": "Buenos Aires",
+    "continent": "South America",
+    "currency": {
+      "code": "ARS",
+      "name": "Argentine Peso",
+      "name_plural": "Argentine pesos",
+      "symbol": "AR$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag":"https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+  },
+{
+    "name": "Bahamas",
+    "code": "BS",
+    "capital": "Nassau",
+    "continent": "North America",
+    "currency": {
+      "code": "BSD",
+      "name": "Bahamian dollar",
+      "name_plural": "Bahamian dollars",
+      "symbol": "B$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"
+  },
+{
+    "name": "Barbados",
+    "code": "BB",
+    "capital": "Bridgetown",
+    "continent": "North America",
+    "currency": {
+      "code": "BBD",
+      "name": "Barbadian dollar",
+      "name_plural": "Barbadian dollars",
+      "symbol": "Bds$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"
+  },
+{
+    "name": "Belize",
+    "code": "BZ",
+    "capital": "Belmopan",
+    "continent": "North America",
+    "currency": {
+      "code": "BZD",
+      "name": "Belize Dollar",
+      "name_plural": "Belize dollars",
+      "symbol": "BZ$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"
+  },
+{
+    "name": "Bolivia",
+    "code": "BO",
+    "capital": "Sucre",
+    "continent": "South America",
+    "currency": {
+      "code": "BOB",
+      "name": "Bolivian Boliviano",
+      "name_plural": "Bolivian bolivianos",
+      "symbol": "Bs",
+      "symbol_native": "Bs",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg"
+  },
+ {
+    "name": "Brazil",
+    "code": "BR",
+    "capital": "Brasília",
+    "continent": "South America",
+    "currency": {
+      "code": "BRL",
+      "name": "Brazilian Real",
+      "name_plural": "Brazilian reals",
+      "symbol": "R$",
+      "symbol_native": "R$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
+  },
+{
+    "name": "Canada",
+    "code": "CA",
+    "capital": "Ottawa",
+    "continent": "North America",
+    "currency": {
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "name_plural": "Canadian dollars",
+      "symbol": "CA$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
+  },
+{
+    "name": "Chile",
+    "code": "CL",
+    "capital": "Santiago",
+    "continent": "South America",
+    "currency": {
+      "code": "CLP",
+      "name": "Chilean Peso",
+      "name_plural": "Chilean pesos",
+      "symbol": "CL$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
+  },
+{
+    "name": "Colombia",
+    "code": "CO",
+    "capital": "Bogotá",
+    "continent": "South America",
+    "currency": {
+      "code": "COP",
+      "name": "Colombian Peso",
+      "name_plural": "Colombian pesos",
+      "symbol": "CO$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+  },
+{
+    "name": "Costa Rica",
+    "code": "CR",
+    "capital": "San José",
+    "continent": "North America",
+    "currency": {
+      "code": "CRC",
+      "name": "Costa Rican Colón",
+      "name_plural": "Costa Rican colóns",
+      "symbol": "¢",
+      "symbol_native": "¢",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "capital": "Havana",
+    "continent": "North America",
+    "currency": {
+      "code": "CUP",
+      "name": "Cuban peso",
+      "name_plural": "Cuban pesoes",
+      "symbol": "$MN",
+      "symbol_native": "?",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"
+  },
+{
+    "name": "Dominica",
+    "code": "DM",
+    "capital": "Roseau",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"
+  },
+{
+    "name": "Ecuador",
+    "code": "EC",
+    "capital": "Quito",
+    "continent": "South America",
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "name_plural": "US dollars",
+      "symbol": "$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"
+  },
+{
+    "name": "El Salvador",
+    "code": "SV",
+    "capital": "San Salvador",
+    "continent": "North America",
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "name_plural": "US dollars",
+      "symbol": "$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_El_Salvador.svg"
+  },
+{
+    "name": "United States",
+    "code": "US",
+    "capital": "Washington",
+    "continent": "North America",
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "name_plural": "US dollars",
+      "symbol": "$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+  },
+{
+    "name": "Grenada",
+    "code": "GD",
+    "capital": "St. George's",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"
+  },
+{
+    "name": "Guatemala",
+    "code": "GT",
+    "capital": "Guatemala City",
+    "continent": "North America",
+    "currency": {
+      "code": "GTQ",
+      "name": "Guatemalan Quetzal",
+      "name_plural": "Guatemalan quetzals",
+      "symbol": "GTQ",
+      "symbol_native": "Q",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"
+  },
+{
+    "name": "Guyana",
+    "code": "GY",
+    "capital": "Georgetown",
+    "continent": "South America",
+    "currency": {
+      "code": "GYD",
+      "name": "Guyanese dollar",
+      "name_plural": "Guyanese dollars",
+      "symbol": "GY$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"
+  },
+{
+    "name": "Haiti",
+    "code": "HT",
+    "capital": "Port-au-Prince",
+    "continent": "North America",
+    "currency": {
+      "code": "HTG",
+      "name": "Haitian gourde",
+      "name_plural": "Haitian gourde",
+      "symbol": "G",
+      "symbol_native": "G",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"
+  },
+{
+    "name": "Honduras",
+    "code": "HN",
+    "capital": "Tegucigalpa",
+    "continent": "North America",
+    "currency": {
+      "code": "HNL",
+      "name": "Honduran Lempira",
+      "name_plural": "Honduran lempiras",
+      "symbol": "HNL",
+      "symbol_native": "L",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"
+  },
+{
+    "name": "Jamaica",
+    "code": "JM",
+    "capital": "Kingston",
+    "continent": "North America",
+    "currency": {
+      "code": "JMD",
+      "name": "Jamaican Dollar",
+      "name_plural": "Jamaican dollars",
+      "symbol": "J$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
+  },
+{
+    "name": "Mexico",
+    "code": "MX",
+    "capital": "Mexico City",
+    "continent": "North America",
+    "currency": {
+      "code": "MXN",
+      "name": "Mexican Peso",
+      "name_plural": "Mexican pesos",
+      "symbol": "MX$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+  },
+{
+    "name": "Nicaragua",
+    "code": "NI",
+    "capital": "Managua",
+    "continent": "North America",
+    "currency": {
+      "code": "NIO",
+      "name": "Nicaraguan Córdoba",
+      "name_plural": "Nicaraguan córdobas",
+      "symbol": "C$",
+      "symbol_native": "C$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_Nicaragua.svg"
+  },
+{
+    "name": "Panama",
+    "code": "PA",
+    "capital": "Panama City",
+    "continent": "North America",
+    "currency": {
+      "code": "PAB",
+      "name": "Panamanian Balboa",
+      "name_plural": "Panamanian balboas",
+      "symbol": "B/.",
+      "symbol_native": "B/.",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+  },
+{
+    "name": "Paraguay",
+    "code": "PY",
+    "capital": "Asunción",
+    "continent": "South America",
+    "currency": {
+      "code": "PYG",
+      "name": "Paraguayan Guarani",
+      "name_plural": "Paraguayan guaranis",
+      "symbol": "?",
+      "symbol_native": "?",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
+  },
+{
+    "name": "Peru",
+    "code": "PE",
+    "capital": "Lima",
+    "continent": "South America",
+    "currency": {
+      "code": "PEN",
+      "name": "Peruvian Nuevo Sol",
+      "name_plural": "Peruvian nuevos soles",
+      "symbol": "S/.",
+      "symbol_native": "S/.",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+  },
+{
+    "name": "Dominican Republic",
+    "code": "DO",
+    "capital": "Santo Domingo",
+    "continent": "North America",
+    "currency": {
+      "code": "DOP",
+      "name": "Dominican Peso",
+      "name_plural": "Dominican pesos",
+      "symbol": "RD$",
+      "symbol_native": "RD$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
+  },
+{
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "capital": "Basseterre",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"
+  },
+{
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "capital": "Kingstown",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
+  },
+{
+    "name": "Saint Lucia",
+    "code": "LC",
+    "capital": "Castries",
+    "continent": "North America",
+    "currency": {
+      "code": "XCD",
+      "name": "Eastern Caribbean Dollar",
+      "name_plural": "Eastern Caribbean Dollars",
+      "symbol": "EC$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"
+  },
+ {
+    "name": "Suriname",
+    "code": "SR",
+    "capital": "Paramaribo",
+    "continent": "South America",
+    "currency": {
+      "code": "SRD",
+      "name": "Surinamese dollar",
+      "name_plural": "Surinamese dollars",
+      "symbol": "Sr$",
+      "symbol_native": "$",
+      "decimal_digits": 0,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"
+  },
+{
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "capital": "Port of Spain",
+    "continent": "North America",
+    "currency": {
+      "code": "TTD",
+      "name": "Trinidad and Tobago Dollar",
+      "name_plural": "Trinidad and Tobago dollars",
+      "symbol": "TT$",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"
+  },
+{
+    "name": "Uruguay",
+    "code": "UY",
+    "capital": "Montevideo",
+    "continent": "South America",
+    "currency": {
+      "code": "UYU",
+      "name": "Uruguayan Peso",
+      "name_plural": "Uruguayan pesos",
+      "symbol": "$U",
+      "symbol_native": "$",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
+  },
+{
+    "name": "Venezuela",
+    "code": "VE",
+    "capital": "Caracas",
+    "continent": "South America",
+    "currency": {
+      "code": "VEF",
+      "name": "Venezuelan Bolívar",
+      "name_plural": "Venezuelan bolívars",
+      "symbol": "Bs.F.",
+      "symbol_native": "Bs.F.",
+      "decimal_digits": 2,
+      "rounding": 0
+    },
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
+  }
+]
