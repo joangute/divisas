@@ -69,7 +69,7 @@ span:nth-child(2){
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
  .contenedor{
  		grid-template-columns: repeat(2,1fr);
  		grid-template-rows: repeat(18,100px);
