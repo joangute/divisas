@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+   box-sizing: border-box;
+}
+body{
+	height: 100vh;
+    padding: 16px;
+	font-family: 'Segoe UI';
+	background-color: #050505;
+	color: white;
+}
+span{
+	display: inline-block;
+}
+.contenedor{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	grid-template-rows: repeat(5,1fr);
+	grid-gap: 16px;
+
+}
+.container{
+	background-color: #191919;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: : center;
+	gap: 10px;
+	border-radius: 4px;
+}
+.container2, .container3{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.bandera{
+	width: 40px;
+	height: 25px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 2px;
+
+	border: 2px solid white;
+	filter: sepia(50%); 
+}
+input{
+	display: inline-block;
+	width: 100%;
+   outline: none;
+   border: none;
+   background-color: #00897b;
+   border-radius: 2px;
+   height: 30px;
+   padding: 5px;
+   color: white;
+}
+input::placeholder{
+	color: #bbb;
+}
+span:nth-child(2){
+	text-align: right;
+	width: 100px;
+   overflow: hidden;
+   white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 400px) {
+ .contenedor{
+ 		grid-template-columns: repeat(2,1fr);
+ 		grid-template-rows: repeat(18,100px);
+ }
+}
