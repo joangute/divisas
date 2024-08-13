@@ -1,9 +1,9 @@
 [
   {
-    "name": "Antigua and Barbuda",
+    "name": "Antigua y Barbuda",
     "code": "AG",
     "capital": "St. John's",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -19,7 +19,7 @@
     "name": "Argentina",
     "code": "AR",
     "capital": "Buenos Aires",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "ARS",
       "name": "Argentine Peso",
@@ -35,7 +35,7 @@
     "name": "Bahamas",
     "code": "BS",
     "capital": "Nassau",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "BSD",
       "name": "Bahamian dollar",
@@ -51,7 +51,7 @@
     "name": "Barbados",
     "code": "BB",
     "capital": "Bridgetown",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "BBD",
       "name": "Barbadian dollar",
@@ -64,10 +64,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"
   },
   {
-    "name": "Belize",
+    "name": "B�lice",
     "code": "BZ",
     "capital": "Belmopan",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "BZD",
       "name": "Belize Dollar",
@@ -83,7 +83,7 @@
     "name": "Bolivia",
     "code": "BO",
     "capital": "Sucre",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "BOB",
       "name": "Bolivian Boliviano",
@@ -96,10 +96,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg"
   },
   {
-    "name": "Brazil",
+    "name": "Brasil",
     "code": "BR",
     "capital": "Bras�lia",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "BRL",
       "name": "Brazilian Real",
@@ -112,10 +112,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
   },
   {
-    "name": "Canada",
+    "name": "Canad�",
     "code": "CA",
     "capital": "Ottawa",
-    "continent": "North America",
+    "continent": "Norte",
     "currency": {
       "code": "CAD",
       "name": "Canadian Dollar",
@@ -131,7 +131,7 @@
     "name": "Chile",
     "code": "CL",
     "capital": "Santiago",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "CLP",
       "name": "Chilean Peso",
@@ -147,7 +147,7 @@
     "name": "Colombia",
     "code": "CO",
     "capital": "Bogot�",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "COP",
       "name": "Colombian Peso",
@@ -163,7 +163,7 @@
     "name": "Costa Rica",
     "code": "CR",
     "capital": "San Jos�",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "CRC",
       "name": "Costa Rican Col�n",
@@ -179,7 +179,7 @@
     "name": "Cuba",
     "code": "CU",
     "capital": "Havana",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "CUP",
       "name": "Cuban peso",
@@ -195,7 +195,7 @@
     "name": "Dominica",
     "code": "DM",
     "capital": "Roseau",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -211,7 +211,7 @@
     "name": "Ecuador",
     "code": "EC",
     "capital": "Quito",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "USD",
       "name": "US Dollar",
@@ -227,7 +227,7 @@
     "name": "El Salvador",
     "code": "SV",
     "capital": "San Salvador",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "USD",
       "name": "US Dollar",
@@ -237,13 +237,13 @@
       "decimal_digits": 2,
       "rounding": 0
     },
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+    "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_El_Salvador.svg"
   },
   {
-    "name": "United States",
+    "name": "Estados Unidos",
     "code": "US",
     "capital": "Washington",
-    "continent": "North America",
+    "continent": "Norte",
     "currency": {
       "code": "USD",
       "name": "US Dollar",
@@ -256,10 +256,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
   },
   {
-    "name": "Grenada",
+    "name": "Granada",
     "code": "GD",
     "capital": "St. George's",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -275,7 +275,7 @@
     "name": "Guatemala",
     "code": "GT",
     "capital": "Guatemala City",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "GTQ",
       "name": "Guatemalan Quetzal",
@@ -291,7 +291,7 @@
     "name": "Guyana",
     "code": "GY",
     "capital": "Georgetown",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "GYD",
       "name": "Guyanese dollar",
@@ -304,10 +304,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"
   },
   {
-    "name": "Haiti",
+    "name": "Hait�",
     "code": "HT",
     "capital": "Port-au-Prince",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "HTG",
       "name": "Haitian gourde",
@@ -323,7 +323,7 @@
     "name": "Honduras",
     "code": "HN",
     "capital": "Tegucigalpa",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "HNL",
       "name": "Honduran Lempira",
@@ -339,7 +339,7 @@
     "name": "Jamaica",
     "code": "JM",
     "capital": "Kingston",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "JMD",
       "name": "Jamaican Dollar",
@@ -352,10 +352,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
   },
   {
-    "name": "Mexico",
+    "name": "M�xico",
     "code": "MX",
     "capital": "Mexico City",
-    "continent": "North America",
+    "continent": "Norte",
     "currency": {
       "code": "MXN",
       "name": "Mexican Peso",
@@ -371,7 +371,7 @@
     "name": "Nicaragua",
     "code": "NI",
     "capital": "Managua",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "NIO",
       "name": "Nicaraguan C�rdoba",
@@ -381,13 +381,13 @@
       "decimal_digits": 2,
       "rounding": 0
     },
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
+    "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_Nicaragua.svg"
   },
   {
-    "name": "Panama",
+    "name": "Panam�",
     "code": "PA",
     "capital": "Panama City",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "PAB",
       "name": "Panamanian Balboa",
@@ -403,7 +403,7 @@
     "name": "Paraguay",
     "code": "PY",
     "capital": "Asunci�n",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "PYG",
       "name": "Paraguayan Guarani",
@@ -416,10 +416,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
   },
   {
-    "name": "Peru",
+    "name": "Per�",
     "code": "PE",
     "capital": "Lima",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "PEN",
       "name": "Peruvian Nuevo Sol",
@@ -432,10 +432,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
   },
   {
-    "name": "Dominican Republic",
+    "name": "Rep�blica Dominicana",
     "code": "DO",
     "capital": "Santo Domingo",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "DOP",
       "name": "Dominican Peso",
@@ -448,10 +448,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
   },
   {
-    "name": "Saint Kitts and Nevis",
+    "name": "San Crist�bal y Nieves",
     "code": "KN",
     "capital": "Basseterre",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -464,10 +464,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"
   },
   {
-    "name": "Saint Vincent and the Grenadines",
+    "name": "San Vicente y las Granadinas",
     "code": "VC",
     "capital": "Kingstown",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -480,10 +480,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
   },
   {
-    "name": "Saint Lucia",
+    "name": "Santa Luc�a",
     "code": "LC",
     "capital": "Castries",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "XCD",
       "name": "Eastern Caribbean Dollar",
@@ -496,10 +496,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"
   },
   {
-    "name": "Suriname",
+    "name": "Surinam",
     "code": "SR",
     "capital": "Paramaribo",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "SRD",
       "name": "Surinamese dollar",
@@ -512,10 +512,10 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad y Tobago",
     "code": "TT",
     "capital": "Port of Spain",
-    "continent": "North America",
+    "continent": "Centro",
     "currency": {
       "code": "TTD",
       "name": "Trinidad and Tobago Dollar",
@@ -531,7 +531,7 @@
     "name": "Uruguay",
     "code": "UY",
     "capital": "Montevideo",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "UYU",
       "name": "Uruguayan Peso",
@@ -547,7 +547,7 @@
     "name": "Venezuela",
     "code": "VE",
     "capital": "Caracas",
-    "continent": "South America",
+    "continent": "Sur",
     "currency": {
       "code": "VEF",
       "name": "Venezuelan Bol�var",
