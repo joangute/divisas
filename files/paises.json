@@ -64,7 +64,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"
   },
   {
-    "name": "B�lice",
+    "name": "Bélice",
     "code": "BZ",
     "capital": "Belmopan",
     "continent": "Centro",
@@ -98,7 +98,7 @@
   {
     "name": "Brasil",
     "code": "BR",
-    "capital": "Bras�lia",
+    "capital": "Brasília",
     "continent": "Sur",
     "currency": {
       "code": "BRL",
@@ -112,7 +112,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
   },
   {
-    "name": "Canad�",
+    "name": "Canadá",
     "code": "CA",
     "capital": "Ottawa",
     "continent": "Norte",
@@ -146,7 +146,7 @@
   {
     "name": "Colombia",
     "code": "CO",
-    "capital": "Bogot�",
+    "capital": "Bogotá",
     "continent": "Sur",
     "currency": {
       "code": "COP",
@@ -169,7 +169,7 @@
       "name": "Costa Rican Col�n",
       "name_plural": "Costa Rican col�ns",
       "symbol": "�",
-      "symbol_native": "�",
+      "symbol_native": "$",
       "decimal_digits": 0,
       "rounding": 0
     },
@@ -304,7 +304,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"
   },
   {
-    "name": "Hait�",
+    "name": "Haití",
     "code": "HT",
     "capital": "Port-au-Prince",
     "continent": "Centro",
@@ -352,7 +352,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
   },
   {
-    "name": "M�xico",
+    "name": "México",
     "code": "MX",
     "capital": "Mexico City",
     "continent": "Norte",
@@ -384,7 +384,7 @@
     "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_Nicaragua.svg"
   },
   {
-    "name": "Panam�",
+    "name": "Panamá",
     "code": "PA",
     "capital": "Panama City",
     "continent": "Centro",
@@ -409,14 +409,14 @@
       "name": "Paraguayan Guarani",
       "name_plural": "Paraguayan guaranis",
       "symbol": "?",
-      "symbol_native": "?",
+      "symbol_native": "Gs",
       "decimal_digits": 0,
       "rounding": 0
     },
     "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
   },
   {
-    "name": "Per�",
+    "name": "Perú",
     "code": "PE",
     "capital": "Lima",
     "continent": "Sur",
@@ -432,7 +432,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
   },
   {
-    "name": "Rep�blica Dominicana",
+    "name": "República Dominicana",
     "code": "DO",
     "capital": "Santo Domingo",
     "continent": "Centro",
@@ -448,7 +448,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
   },
   {
-    "name": "San Crist�bal y Nieves",
+    "name": "San Cristóbal y Nieves",
     "code": "KN",
     "capital": "Basseterre",
     "continent": "Centro",
@@ -480,7 +480,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
   },
   {
-    "name": "Santa Luc�a",
+    "name": "Santa Lucía",
     "code": "LC",
     "capital": "Castries",
     "continent": "Centro",
