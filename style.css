@@ -92,7 +92,7 @@ input:focus{
  		grid-template-columns: repeat(2,1fr);
  		grid-template-rows: repeat(18,100px);
  }
-<<<<<<< HEAD
+
  .container2>span:nth-child(2){
  	width: 100px;
  }
@@ -100,6 +100,3 @@ input:focus{
  	font-size: 1.5em;
  }
 }
-=======
-}
->>>>>>> 573c6c45bb31c29005bca7c7e604e6c821f12350
