@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -6,64 +5,116 @@
 }
 body{
 	height: 100vh;
- 
 	font-family: 'Segoe UI';
-	background-color: #050505;
 	background-color: #A4CAC9;
-	color: white;
 	color:#111;
+
 }
 h1{
-	text-align: center;
- font-family: "Rubik Mono One", monospace;
  color: #005971;
- padding-top: 24px;
+ text-align: center;
+margin-bottom: 16px;
 }
 span{
 	display: inline-block;
 }
+.flex{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
 .contenedor{
-	margin: 0 20%;
-	padding: 16px;
-	width: 60%;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(3,250px);
 	grid-gap: 16px;
 
 }
+
 .container{
-	background-color: #191919;
 	background-color: #fefce7;
-	width: 100%;
 	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: : center;
 	gap: 5px;
 	border-radius: 4px;
+	transition: background-color .3s ease;
+	position: relative;
+	overflow: hidden;
+}
+.container:hover{
+	outline: 2px solid #8975AD;
+}
+.botones{
+	position: absolute;
+	width: 50px;
+	right: -45px;
+	bottom: 0;
+	top:0;
+	background-color: #8975AD;
+	border-top-left-radius: 30%; 
+	border-bottom-left-radius: 30%;
+	transition: right .5s ease;	
+}
+.cambiar{
+		background-image: url('images/lista.svg');
+}
+.ordenar{
+	background-image: url('images/cambiar.svg');
+}
+.cambiar,.ordenar{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-size:cover;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.cambiar:hover{
+  background-color: #B57BB0;
+  box-shadow: 0 0 0 3px  #B57BB0;
+}
+.ordenar:hover{
+  background-color: #B57BB0;
+   box-shadow: 0 0 0 3px  #B57BB0;
+}
+
+.invisible{
+	right: 0;
+}
+.seleccionado{
+	background-color: #51C28A;
+	color:white;
+	box-shadow: 0 0 5px white;
 }
 .container2, .container3{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+
+}
+.container3{
+	align-items: center;
 }
 .bandera{
-	width: 40px;
+	width: 45px;
 	height: 25px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 2px;
-
-	border: 2px solid white;
 	filter: sepia(50%); 
+}
+.container2>span:nth-child(2){
+	text-align: right;
+	width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 input{
 	display: inline-block;
 	width: 70%;
    outline: none;
    border: none;
-	background-color: #fefce7;
+   background-color: #fefce7;
    border-radius: 2px;
    border-bottom: 1px solid #ccc;
    height: 30px;
@@ -75,26 +126,86 @@ input::placeholder{
 }
 
 input:focus{
-	outline: 2px solid white;
+	 border-bottom: 2px solid #999;;
 }
-.container2>span:nth-child(2){
-	text-align: right;
-	width: 150px;
-   overflow: hidden;
+
+
+.modal{
+	background-color: rgba(255,255,255,.9);
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity .5s ease;
+    pointer-events: auto;
+}
+
+
+.modal>h2{
+	margin-bottom: 10px;
+	color: #005971;
+}
+.cerrar{
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	width: 30px;
+	height: 30px;
+	background-image: url('images/cerrar.svg');
+	background-size: cover;
+	cursor: pointer;
+}
+.oculto{
+	visibility: hidden;
+}
+.lista_faltantes{
+	display: grid;
+	grid-template-columns: repeat(2,200px);
+	gap:5px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 8px;
+	border: 2px solid #bbb;
+}
+.elemento_faltante{
+	border-radius: 4px;
+	border: 2px solid #bbb;
+	padding: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.elemento_faltante:hover{
+	background-color: #8975AD;
+}
+.bandera_faltante{
+	width: 40px;
+	height: 25px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 2px;
+	filter: sepia(50%); 
+}
+.nombre_faltante{
+	width: 140px;
+	overflow: hidden;
    white-space: nowrap;
   text-overflow: ellipsis;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 480px) {
+  body{
+  	padding: 10px;
+  }
  .contenedor{
  	    margin:0;
  	    width: 100%;
  		grid-template-columns: repeat(2,1fr);
- 		grid-template-rows: repeat(18,100px);
  }
 
- .container2>span:nth-child(2){
- 	width: 100px;
+ .container{
  }
  h1{
  	font-size: 1.5em;
