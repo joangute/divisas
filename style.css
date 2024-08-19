@@ -200,7 +200,7 @@ input:focus{
   body{
   	 display: block !important;
   	 margin: auto 0;
-  	padding: 10px;
+  	padding: 0 10px;
   }
  .contenedor{
  	    margin:0;
