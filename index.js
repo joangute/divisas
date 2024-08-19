@@ -3,6 +3,7 @@ const body=document.querySelector('.contenedor');
 const modal=document.querySelector('.modal');
 const lista_faltantes=document.querySelector('.lista_faltantes');
 const cerrar=document.querySelector('.cerrar');
+const size=window.innerWidth;
 
 let indice;
 let faltantes=[];
@@ -36,29 +37,42 @@ function llenarPaises(obj){
 	let centro=[];
 	let norte=[];
 	let sur=[];
-	for (let i=0;i<obj.length;i++){
+	let cadena=[7,15,22,1,5,6,8,9,13,26,33,34];
+	if(size>480){
 
-		if(obj[i].continent=='Centro'){
-			centro.push(i);
+		for (let i=0;i<obj.length;i++){
+
+			if(obj[i].continent=='Centro'){
+				centro.push(i);
+			}
+			if(obj[i].continent=='Norte'){
+				norte.push(i);
+			}
+			if(obj[i].continent=='Sur'){
+				sur.push(i);
+			}
 		}
-		if(obj[i].continent=='Norte'){
-			norte.push(i);
-		}
-		if(obj[i].continent=='Sur'){
-			sur.push(i);
+
+		norte.forEach(e=>llenarPagina(obj,e));
+		sur.forEach(e=>llenarPagina(obj,e));
+		for(let j=0;j<centro.length;j++){
+			if(j<3){
+				 llenarPagina(obj,centro[j]);
+			}
+	    else{
+	    	faltantes.push(centro[j]);
+	    }
 		}
 	}
-
-	norte.forEach(e=>llenarPagina(obj,e));
-	sur.forEach(e=>llenarPagina(obj,e));
-	for(let j=0;j<centro.length;j++){
-		if(j<3){
-			 llenarPagina(obj,centro[j]);
+	else{
+		cadena.forEach(e=>llenarPagina(obj,e));
+		for(let i=0;i<35;i++){
+			if (cadena.indexOf(i)==-1){
+				faltantes.push(i);
+			}
 		}
-    else{
-    	faltantes.push(centro[j]);
-    }
 	}
+	
 
 	elementosFaltantes(obj);
 }

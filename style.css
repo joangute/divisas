@@ -52,7 +52,8 @@ span{
 	background-color: #8975AD;
 	border-top-left-radius: 30%; 
 	border-bottom-left-radius: 30%;
-	transition: right .5s ease;	
+	transition: right .5s ease;
+	justify-content: space-around;	
 }
 .cambiar{
 		background-image: url('images/lista.svg');
