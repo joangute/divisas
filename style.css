@@ -198,7 +198,8 @@ input:focus{
 
 @media only screen and (max-width: 480px) {
   body{
-  	height: 100dvh;
+  	 display: block !important;
+  	 margin: auto 0;
   	padding: 10px;
   }
  .contenedor{
