@@ -41,7 +41,7 @@ span{
 	overflow: hidden;
 }
 .container:hover{
-	outline: 2px solid #8975AD;
+	box-shadow: 0 0 0 2px #8975AD;
 }
 .botones{
 	position: absolute;
