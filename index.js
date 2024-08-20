@@ -9,6 +9,7 @@ let indice;
 let faltantes=[];
 let contador=0;
 let id_previo,id_actual;
+let estado_botones=0;
 cerrar.addEventListener('click',()=>{
 	modal.style.opacity='0';
 	setTimeout(e=>modal.classList.toggle('oculto'),500);
@@ -95,11 +96,13 @@ function llenarPagina(obj,i){
 		bandera=document.createElement('span');
 		bandera.classList.add('bandera');
 		bandera.style.backgroundImage=`url(${obj[i].flag})`;
-		container2.appendChild(bandera);
+		
 
 		nombre=document.createElement('span');
 		nombre.textContent=obj[i].name;
+
 		container2.appendChild(nombre);
+		container2.appendChild(bandera);
 
 		input=document.createElement('input');
 		input.setAttribute('type','text');
@@ -139,14 +142,14 @@ function llenarPagina(obj,i){
          caja.classList.toggle('seleccionado');
          
          container.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[id_previo].flag}')`;
-				 container.querySelector('.container2>span:nth-child(2)').textContent=obj[id_previo].name;
+				 container.querySelector('.container2>span:nth-child(1)').textContent=obj[id_previo].name;
 				 container.querySelector('.container3>span').textContent=obj[id_previo].currency.code;
 				 container.querySelector('.container3>input').placeholder=obj[id_previo].currency.symbol_native;
 				 
 
 
 				 caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[container.id].flag}')`;
-				 caja.querySelector('.container2>span:nth-child(2)').textContent=obj[container.id].name;
+				 caja.querySelector('.container2>span:nth-child(1)').textContent=obj[container.id].name;
 				 caja.querySelector('.container3>span').textContent=obj[container.id].currency.code;
 				 caja.querySelector('.container3>input').placeholder=obj[container.id].currency.symbol_native;
 
@@ -159,8 +162,31 @@ function llenarPagina(obj,i){
     });
     botones.appendChild(cambiar);
     botones.appendChild(ordenar);
-		botones.addEventListener('mouseover',e=>botones.classList.toggle('invisible'));
-		botones.addEventListener('mouseout',e=>botones.classList.toggle('invisible'));
+
+    
+   if(size>480){
+   	bandera.addEventListener('mouseenter',e=>{
+			botones.classList.add('invisible');
+			setTimeout(()=>{
+				console.log(estado_botones);
+				botones.addEventListener('mouseenter',x=>estado_botones=1);
+				if(estado_botones==0){
+				botones.classList.remove('invisible');
+			}
+			},300);
+			
+		});
+	
+		botones.addEventListener('mouseleave',e=>{
+			botones.classList.remove('invisible');
+			estado_botones=0;
+		});
+   }
+   else{
+   	bandera.addEventListener('click',e=>botones.classList.add('invisible'));
+   	botones.addEventListener('click',e=>botones.classList.remove('invisible'));
+   }
+		
 
 		container.appendChild(container2);
 		container.appendChild(container3);
@@ -226,7 +252,7 @@ function elementosFaltantes(obj){
 		     			caja.id=faltantes[i];
 		     			
 		     			caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[faltantes[i]].flag}')`;
-				 			caja.querySelector('.container2>span:nth-child(2)').textContent=obj[faltantes[i]].name;
+				 			caja.querySelector('.container2>span:nth-child(1)').textContent=obj[faltantes[i]].name;
 				 			caja.querySelector('.container3>span').textContent=obj[faltantes[i]].currency.code;
 				 			caja.querySelector('.container3>input').placeholder=obj[faltantes[i]].currency.symbol_native;
 		     			e.currentTarget.querySelector('.bandera_faltante').style.backgroundImage=`url(${obj[indice].flag})`;

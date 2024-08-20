@@ -45,13 +45,11 @@ span{
 }
 .botones{
 	position: absolute;
-	width: 50px;
-	right: -45px;
+	width: 60px;
+	right: -60px;
 	bottom: 0;
 	top:0;
 	background-color: #8975AD;
-	border-top-left-radius: 30%; 
-	border-bottom-left-radius: 30%;
 	transition: right .5s ease;
 	justify-content: space-around;	
 }
@@ -101,10 +99,11 @@ span{
 	background-size: cover;
 	background-position: center;
 	border-radius: 2px;
-	filter: sepia(50%); 
+	filter: sepia(50%);
+	cursor: pointer; 
 }
-.container2>span:nth-child(2){
-	text-align: right;
+.container2>span:nth-child(1){
+	text-align: left;
 	width: 150px;
     overflow: hidden;
     white-space: nowrap;
@@ -120,6 +119,7 @@ input{
    border-bottom: 1px solid #ccc;
    height: 30px;
    padding: 5px;
+   font-size: 16px;
    cursor: pointer;
 }
 input::placeholder{
@@ -199,17 +199,36 @@ input:focus{
 @media only screen and (max-width: 480px) {
   body{
   	height: 100svh;
-  	 display: block;
   	padding: 0 10px;
   }
   h1{
   	font-size: 1.5em;
   	margin-bottom: 10px;
   }
+  .modal>h2{
+  	text-align: left;
+  }
  .contenedor{
  	    margin:0;
  	    width: 100%;
  		grid-template-columns: repeat(2,1fr);
  }
+ .elemento_faltante{
+ 	padding: 3px;
+
+ }
+ .cerrar{
+ 	top:5px;
+ 	right: 5px;
+ 	width: 20px;
+	height: 20px;
+ }
+
+ .lista_faltantes{
+	grid-template-columns: repeat(2,1fr);
+	padding: 0 5px;
+	border:none;
+
+}
 
 }
