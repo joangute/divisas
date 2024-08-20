@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -5,15 +6,17 @@
 }
 body{
 	height: 100vh;
-	font-family: 'Segoe UI';
+	font-family: "Poppins", sans-serif;
 	background-color: #A4CAC9;
-	color:#111;
+	color:#072C2C;
 
 }
 h1{
- color: #005971;
+
  text-align: center;
 margin-bottom: 16px;
+text-transform: uppercase;
+
 }
 span{
 	display: inline-block;
@@ -64,16 +67,17 @@ span{
 	height: 20px;
 	width: 20px;
 	background-size:cover;
+	border-radius: 4px;
 	cursor: pointer;
 	transition: all .3s ease;
 }
 .cambiar:hover{
-  background-color: #B57BB0;
-  box-shadow: 0 0 0 3px  #B57BB0;
+  background-color: rgba(255,255,255,.4);
+  box-shadow: 0 0 0 3px  rgba(255,255,255,.4);
 }
 .ordenar:hover{
-  background-color: #B57BB0;
-   box-shadow: 0 0 0 3px  #B57BB0;
+  background-color: rgba(255,255,255,.5);
+   box-shadow: 0 0 0 3px  rgba(255,255,255,.4);
 }
 
 .invisible{
@@ -202,8 +206,9 @@ input:focus{
   	padding: 0 10px;
   }
   h1{
-  	font-size: 1.5em;
+  	font-size: 1.3em;
   	margin-bottom: 10px;
+  	
   }
   .modal>h2{
   	text-align: left;
@@ -212,6 +217,7 @@ input:focus{
  	    margin:0;
  	    width: 100%;
  		grid-template-columns: repeat(2,1fr);
+ 		grid-gap:10px;
  }
  .elemento_faltante{
  	padding: 3px;
