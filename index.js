@@ -81,14 +81,14 @@ function llenarPaises(obj){
 
 function llenarPagina(obj,i){
 
-		let container, container2, container3, bandera, nombre, input, codigo,botones,cambiar,ordenar;
+		let container, container2, container3, bandera, nombre, input, codigo,botones,cambiar,ordenar,botonCambiar,botonOrdenar;
 
 		container= document.createElement('div');
 		container.classList.add('container','flex');
 		container.setAttribute('id',i);
 
 		container2= document.createElement('div');
-		container2.classList.add('container2');
+	  container2.classList.add('container2');
 
 		container3= document.createElement('div');
 		container3.classList.add('container3');
@@ -96,7 +96,6 @@ function llenarPagina(obj,i){
 		bandera=document.createElement('span');
 		bandera.classList.add('bandera');
 		bandera.style.backgroundImage=`url(${obj[i].flag})`;
-		
 
 		nombre=document.createElement('span');
 		nombre.textContent=obj[i].name;
@@ -118,57 +117,19 @@ function llenarPagina(obj,i){
 
     cambiar=document.createElement('div');
     cambiar.classList.add('cambiar');
-    cambiar.addEventListener('click', ()=>{
-    	modal.classList.toggle('oculto');
-    	modal.querySelector('h2').textContent=`Cambiar ${obj[i].name} por:`;
-    	modal.style.opacity='1';
-    	indice=container.id;
-    });
 
     ordenar=document.createElement('div');
     ordenar.classList.add('ordenar');
-    ordenar.addEventListener('click',()=>{
-    	contador++;
-      if(contador<2){
- 				container.classList.toggle('seleccionado');
- 				id_previo=container.id;
-      }
-      else{
-      	container.classList.toggle('seleccionado');
 
-      	setTimeout(()=>{
-      		let caja=document.querySelector(`.container[id='${id_previo}']`);
-         container.classList.toggle('seleccionado');
-         caja.classList.toggle('seleccionado');
-         
-         container.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[id_previo].flag}')`;
-				 container.querySelector('.container2>span:nth-child(1)').textContent=obj[id_previo].name;
-				 container.querySelector('.container3>span').textContent=obj[id_previo].currency.code;
-				 container.querySelector('.container3>input').placeholder=obj[id_previo].currency.symbol_native;
-				 
-
-
-				 caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[container.id].flag}')`;
-				 caja.querySelector('.container2>span:nth-child(1)').textContent=obj[container.id].name;
-				 caja.querySelector('.container3>span').textContent=obj[container.id].currency.code;
-				 caja.querySelector('.container3>input').placeholder=obj[container.id].currency.symbol_native;
-
-				 caja.id=container.id;
-				 container.id=id_previo;
-
-      	},300);
-      	contador=0;
-      }
-    });
     botones.appendChild(cambiar);
     botones.appendChild(ordenar);
 
-    
-   if(size>480){
+    if(size>480){
+    botonCambiar=cambiar;
+    botonOrdenar=ordenar;
    	bandera.addEventListener('mouseenter',e=>{
 			botones.classList.add('invisible');
 			setTimeout(()=>{
-				console.log(estado_botones);
 				botones.addEventListener('mouseenter',x=>estado_botones=1);
 				if(estado_botones==0){
 				botones.classList.remove('invisible');
@@ -183,15 +144,58 @@ function llenarPagina(obj,i){
 		});
    }
    else{
-   	bandera.addEventListener('click',e=>botones.classList.add('invisible'));
-   	botones.addEventListener('click',e=>botones.classList.remove('invisible'));
+       botonCambiar=nombre;
+       botonOrdenar=bandera;
    }
-		
+
+ 
+    botonCambiar.addEventListener('click', ()=>{
+    	modal.classList.toggle('oculto');
+    	modal.querySelector('h2').textContent=`Cambiar ${obj[i].name} por:`;
+    	modal.style.opacity='1';
+    	indice=container.id;
+    });
+
+
+    botonOrdenar.addEventListener('click',()=>{
+    	contador++;
+      if(contador<2){
+ 				container.classList.toggle('seleccionado');
+ 				id_previo=container.id;
+      }
+      else{
+      	container.classList.toggle('seleccionado');
+
+      	setTimeout(()=>{
+      		let caja=document.querySelector(`.container[id='${id_previo}']`);
+      		let cajaValue=caja.querySelector('.container3>input').value;
+         container.classList.toggle('seleccionado');
+         caja.classList.toggle('seleccionado');
+         
+         container.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[id_previo].flag}')`;
+				 container.querySelector('.container2>span:nth-child(1)').textContent=obj[id_previo].name;
+				 container.querySelector('.container3>span').textContent=obj[id_previo].currency.code;
+				 container.querySelector('.container3>input').placeholder=obj[id_previo].currency.symbol_native;
+			
+				 caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[container.id].flag}')`;
+				 caja.querySelector('.container2>span:nth-child(1)').textContent=obj[container.id].name;
+				 caja.querySelector('.container3>span').textContent=obj[container.id].currency.code;
+				 caja.querySelector('.container3>input').placeholder=obj[container.id].currency.symbol_native;
+
+          caja.querySelector('.container3>input').value=container.querySelector('.container3>input').value;
+          container.querySelector('.container3>input').value=cajaValue;
+				 caja.id=container.id;
+				 container.id=id_previo;
+
+      	},300);
+      	contador=0;
+      }
+    });
+
 
 		container.appendChild(container2);
 		container.appendChild(container3);
 		container.appendChild(botones);
-
 		body.appendChild(container);
 }
 
@@ -228,7 +232,6 @@ function convertirDivisas(obj,obj2){
 
 function elementosFaltantes(obj){
 	let elemento,bandera,nombre;
-	let cambiars=document.querySelectorAll('.cambiar');
 
 	for(let i=0;i<faltantes.length;i++){
 
