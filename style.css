@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -104,14 +105,42 @@ span{
 	background-position: center;
 	border-radius: 2px;
 	filter: sepia(50%);
-	cursor: pointer; 
+	cursor: pointer;
+	position: relative;
+	overflow: hidden; 
 }
-.container2>span:nth-child(1){
+
+.bander{
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+ 	background-color: #8975AD;
+   background-image: url(images/blanco.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   transition: opacity .3s ease;
+   border-radius: 2px;
+   opacity: 0;
+  }
+
+.nombre{
 	text-align: left;
 	width: 150px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.nombre:hover{
+ padding-left: 18px;
+ background-image: url('images/arriba.svg');
+ background-position: left center;
+ background-repeat: no-repeat;
+ background-size: 15px 15px;
 }
 input{
 	display: inline-block;

@@ -81,7 +81,7 @@ function llenarPaises(obj){
 
 function llenarPagina(obj,i){
 
-		let container, container2, container3, bandera, nombre, input, codigo,botones,cambiar,ordenar,botonCambiar,botonOrdenar;
+		let container, container2, container3, bandera, nombre, input, codigo,botones,cambiar,ordenar,botonCambiar,botonOrdenar,bander;
 
 		container= document.createElement('div');
 		container.classList.add('container','flex');
@@ -97,7 +97,13 @@ function llenarPagina(obj,i){
 		bandera.classList.add('bandera');
 		bandera.style.backgroundImage=`url(${obj[i].flag})`;
 
+		bander=document.createElement('span');
+		bander.classList.add('bander', 'oculto');
+
+		bandera.appendChild(bander);
+
 		nombre=document.createElement('span');
+		nombre.classList.add('nombre');
 		nombre.textContent=obj[i].name;
 
 		container2.appendChild(nombre);
@@ -125,9 +131,28 @@ function llenarPagina(obj,i){
     botones.appendChild(ordenar);
 
     if(size>480){
-    botonCambiar=cambiar;
-    botonOrdenar=ordenar;
-   	bandera.addEventListener('mouseenter',e=>{
+        botonCambiar=nombre;
+       botonOrdenar=bandera;
+    bandera.addEventListener('mouseenter',e=>{
+  
+       bander.classList.remove('oculto');
+       bander.style.opacity=1;
+       bandera.style.filter='sepia(0)';
+    });
+     bandera.addEventListener('mouseleave',e=>{
+     	if(contador==0){
+     		bander.style.opacity=1;
+       setTimeout(()=>{
+       	    bander.classList.add('oculto');
+        		bandera.style.filter='sepia(50%)';
+       },300);
+     	}
+       
+   
+    });
+
+
+   /*	bandera.addEventListener('mouseenter',e=>{
 			botones.classList.add('invisible');
 			setTimeout(()=>{
 				botones.addEventListener('mouseenter',x=>estado_botones=1);
@@ -141,7 +166,7 @@ function llenarPagina(obj,i){
 		botones.addEventListener('mouseleave',e=>{
 			botones.classList.remove('invisible');
 			estado_botones=0;
-		});
+		});*/
    }
    else{
        botonCambiar=nombre;
@@ -258,6 +283,8 @@ function elementosFaltantes(obj){
 				 			caja.querySelector('.container2>span:nth-child(1)').textContent=obj[faltantes[i]].name;
 				 			caja.querySelector('.container3>span').textContent=obj[faltantes[i]].currency.code;
 				 			caja.querySelector('.container3>input').placeholder=obj[faltantes[i]].currency.symbol_native;
+
+				 			
 		     			e.currentTarget.querySelector('.bandera_faltante').style.backgroundImage=`url(${obj[indice].flag})`;
 		     			e.currentTarget.querySelector('.nombre_faltante').textContent=obj[indice].name;
 		     			faltantes[i]=indice;
@@ -270,30 +297,5 @@ function elementosFaltantes(obj){
 		}
 }
 
-/*function masMenos(obj){
-	const mas_menos=document.querySelector('.mas_menos');
-	let toggle=true;
-	mas_menos.addEventListener('click',()=>{
-
-		if(toggle)
-		{
-			for(let i=0;i<faltantes.length; i++)
-		   {
-		   	llenarPagina(obj,faltantes[i]);
-		   }
-		   mas_menos.textContent='Menos';
-		   toggle=false;
-		}
-		else{
-			let containers=document.querySelectorAll('.container')	
-			for( let i=18; i<35; i++){
-		      containers[i].remove();
-		      valor.pop();
-			}
-			mas_menos.textContent='Más';
-			toggle=true;
-		} 
-	});
-}*/
 
  
