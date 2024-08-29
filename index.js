@@ -1,4 +1,4 @@
-//import data from './files/paises.json' assert {type:'json'};
+
 const body=document.querySelector('.contenedor');
 const modal=document.querySelector('.modal');
 const lista_faltantes=document.querySelector('.lista_faltantes');
@@ -8,8 +8,9 @@ const size=window.innerWidth;
 let indice;
 let faltantes=[];
 let contador=0;
-let id_previo,id_actual;
+//let indice;
 let estado_botones=0;
+
 cerrar.addEventListener('click',()=>{
 	modal.style.opacity='0';
 	setTimeout(e=>modal.classList.toggle('oculto'),500);
@@ -28,12 +29,12 @@ async function leerPaises() {
   const response2 = await fetch(request2);
   const divisas = await response2.json();
 
-  llenarPaises(paises);
+  llenarPaises(paises, divisas);
   convertirDivisas(paises,divisas);
 }
 
 
-function llenarPaises(obj){
+function llenarPaises(obj,obj2){
 	
 	let centro=[];
 	let norte=[];
@@ -73,15 +74,14 @@ function llenarPaises(obj){
 			}
 		}
 	}
-	
 
-	elementosFaltantes(obj);
+	elementosFaltantes(obj,obj2);
 }
 
 
 function llenarPagina(obj,i){
 
-		let container, container2, container3, bandera, nombre, input, codigo,botones,cambiar,ordenar,botonCambiar,botonOrdenar,bander;
+		let container, container2, container3, bandera, nombre, input, codigo,bander,caja,cajaValue;
 
 		container= document.createElement('div');
 		container.classList.add('container','flex');
@@ -114,114 +114,113 @@ function llenarPagina(obj,i){
 		input.setAttribute('placeholder',`${obj[i].currency.symbol_native} 0.0`);
 		container3.appendChild(input);
         
-    codigo=document.createElement('span');
-    codigo.textContent=obj[i].currency.code;
-    container3.appendChild(codigo);
+	  codigo=document.createElement('span');
+	  codigo.textContent=obj[i].currency.code;
+	  container3.appendChild(codigo);
 
-    botones=document.createElement('div');
-    botones.classList.add('botones','flex');
+	  if(size>480){
+	     bandera.addEventListener('mouseenter',agregarIcono);
+	     bandera.addEventListener('mouseleave',quitarIcono);
+	  }
+    else{ 
+	     bandera.addEventListener('click',agregarIcono);
+	  }
 
-    cambiar=document.createElement('div');
-    cambiar.classList.add('cambiar');
-
-    ordenar=document.createElement('div');
-    ordenar.classList.add('ordenar');
-
-    botones.appendChild(cambiar);
-    botones.appendChild(ordenar);
-
-    if(size>480){
-        botonCambiar=nombre;
-       botonOrdenar=bandera;
-    bandera.addEventListener('mouseenter',e=>{
-  
-       bander.classList.remove('oculto');
-       bander.style.opacity=1;
-       bandera.style.filter='sepia(0)';
-    });
-     bandera.addEventListener('mouseleave',e=>{
-     	if(contador==0){
-     		bander.style.opacity=1;
-       setTimeout(()=>{
-       	    bander.classList.add('oculto');
-        		bandera.style.filter='sepia(50%)';
-       },300);
-     	}
-       
-   
-    });
-
-
-   /*	bandera.addEventListener('mouseenter',e=>{
-			botones.classList.add('invisible');
-			setTimeout(()=>{
-				botones.addEventListener('mouseenter',x=>estado_botones=1);
-				if(estado_botones==0){
-				botones.classList.remove('invisible');
-			}
-			},300);
-			
-		});
-	
-		botones.addEventListener('mouseleave',e=>{
-			botones.classList.remove('invisible');
-			estado_botones=0;
-		});*/
-   }
-   else{
-       botonCambiar=nombre;
-       botonOrdenar=bandera;
-   }
-
- 
-    botonCambiar.addEventListener('click', ()=>{
+    nombre.addEventListener('click', ()=>{
     	modal.classList.toggle('oculto');
     	modal.querySelector('h2').textContent=`Cambiar ${obj[i].name} por:`;
     	modal.style.opacity='1';
     	indice=container.id;
     });
 
+    bandera.addEventListener('click',(e)=>{
+      contador++;
+      container.classList.toggle('seleccionado');
 
-    botonOrdenar.addEventListener('click',()=>{
-    	contador++;
+      if(size>480){
+      	container.querySelector('.bandera').removeEventListener('mouseleave',quitarIcono);
+      }
+   
       if(contador<2){
- 				container.classList.toggle('seleccionado');
- 				id_previo=container.id;
+ 				indice=container.id;
+
       }
       else{
-      	container.classList.toggle('seleccionado');
+    
+        caja=document.querySelector(`.container[id='${indice}']`);
+      	cajaValue=caja.querySelector('.container3>input').value;
 
-      	setTimeout(()=>{
-      		let caja=document.querySelector(`.container[id='${id_previo}']`);
-      		let cajaValue=caja.querySelector('.container3>input').value;
-         container.classList.toggle('seleccionado');
-         caja.classList.toggle('seleccionado');
-         
-         container.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[id_previo].flag}')`;
-				 container.querySelector('.container2>span:nth-child(1)').textContent=obj[id_previo].name;
-				 container.querySelector('.container3>span').textContent=obj[id_previo].currency.code;
-				 container.querySelector('.container3>input').placeholder=obj[id_previo].currency.symbol_native;
-			
-				 caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[container.id].flag}')`;
-				 caja.querySelector('.container2>span:nth-child(1)').textContent=obj[container.id].name;
-				 caja.querySelector('.container3>span').textContent=obj[container.id].currency.code;
-				 caja.querySelector('.container3>input').placeholder=obj[container.id].currency.symbol_native;
+			  if(container.id!=caja.id){      
+      		caja.querySelector('.bander').style.opacity=0;
+			  	caja.querySelector('.bandera').style.filter='sepia(50%)';
+			  	setTimeout(()=>{
+      
+            container.classList.toggle('seleccionado');
+            caja.classList.toggle('seleccionado');
+ 
+            container.querySelector('.bandera').style.backgroundImage=`url('${obj[indice].flag}')`;
+						container.querySelector('.container2>span:nth-child(1)').textContent=obj[indice].name;
+						container.querySelector('.container3>span').textContent=obj[indice].currency.code;
+						container.querySelector('input').placeholder=obj[indice].currency.symbol_native;
+						
+						caja.querySelector('.bandera').style.backgroundImage=`url('${obj[container.id].flag}')`;
+						caja.querySelector('.container2>span:nth-child(1)').textContent=obj[container.id].name;
+						caja.querySelector('.container3>span').textContent=obj[container.id].currency.code;
+						caja.querySelector('input').placeholder=obj[container.id].currency.symbol_native;
+            caja.querySelector('.bander').classList.remove('oculto');
 
-          caja.querySelector('.container3>input').value=container.querySelector('.container3>input').value;
-          container.querySelector('.container3>input').value=cajaValue;
-				 caja.id=container.id;
-				 container.id=id_previo;
+            if(size <=480){
+            	 	container.querySelector('.bander').style.opacity=0;
+			      		container.querySelector('.bandera').style.filter='sepia(50%)';
+            		container.querySelector('.bander').classList.remove('oculto');
+            }
 
-      	},300);
+            caja.querySelector('input').value=container.querySelector('.container3>input').value;
+            container.querySelector('input').value=cajaValue;
+			      container.querySelector('.bandera').addEventListener('mouseleave',quitarIcono);
+            caja.querySelector('.bandera').addEventListener('mouseleave',quitarIcono);
+						caja.id=container.id;
+						container.id=indice;
+
+      		},300);
+
+			  }
+			  else{
+			  	if(size>480){
+			  		container.querySelector('.bandera').addEventListener('mouseleave',quitarIcono);
+			  	}
+			  	else{
+			  		quitarIcono(e);
+			  	}
+        
+			  }
+      	
+      	
       	contador=0;
       }
     });
 
-
 		container.appendChild(container2);
 		container.appendChild(container3);
-		container.appendChild(botones);
 		body.appendChild(container);
+}
+
+function agregarIcono(e){
+  
+      e.currentTarget.querySelector('.bander').classList.remove('oculto');
+		  e.currentTarget.querySelector('.bander').style.opacity=1;
+		  e.currentTarget.style.filter='sepia(0)';
+}
+function quitarIcono(e){
+   	     	  
+	    e.currentTarget.querySelector('.bander').style.opacity=0;
+	    e.currentTarget.style.filter='sepia(50%)';
+	    let id=e.currentTarget.parentElement.parentElement.id;
+	         setTimeout(()=>{
+	       	   document.querySelector(`.container[id="${id}"]`).querySelector('.bander').classList.add('oculto');
+	         
+	         },300);
+
 }
 
 function convertirDivisas(obj,obj2){
@@ -255,7 +254,7 @@ function convertirDivisas(obj,obj2){
 }
 		
 
-function elementosFaltantes(obj){
+function elementosFaltantes(obj,obj2){
 	let elemento,bandera,nombre;
 
 	for(let i=0;i<faltantes.length;i++){
@@ -279,11 +278,11 @@ function elementosFaltantes(obj){
               let caja=document.querySelector(`.container[id='${indice}']`);		    
 		     			caja.id=faltantes[i];
 		     			
-		     			caja.querySelector('.container2>.bandera').style.backgroundImage=`url('${obj[faltantes[i]].flag}')`;
+		     			caja.querySelector('.bandera').style.backgroundImage=`url('${obj[faltantes[i]].flag}')`;
 				 			caja.querySelector('.container2>span:nth-child(1)').textContent=obj[faltantes[i]].name;
 				 			caja.querySelector('.container3>span').textContent=obj[faltantes[i]].currency.code;
-				 			caja.querySelector('.container3>input').placeholder=obj[faltantes[i]].currency.symbol_native;
-
+				 			caja.querySelector('input').placeholder=obj[faltantes[i]].currency.symbol_native;
+							caja.querySelector('input').value=((caja.querySelector('input').value/obj2.data[obj[indice].currency.code].value)*obj2.data[obj[faltantes[i]].currency.code].value).toFixed(2);
 				 			
 		     			e.currentTarget.querySelector('.bandera_faltante').style.backgroundImage=`url(${obj[indice].flag})`;
 		     			e.currentTarget.querySelector('.nombre_faltante').textContent=obj[indice].name;

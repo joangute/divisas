@@ -47,43 +47,7 @@ span{
 .container:hover{
 	box-shadow: 0 0 0 2px #8975AD;
 }
-.botones{
-	position: absolute;
-	width: 60px;
-	right: -60px;
-	bottom: 0;
-	top:0;
-	background-color: #8975AD;
-	transition: right .5s ease;
-	justify-content: space-around;	
-}
-.cambiar{
-		background-image: url('images/lista.svg');
-}
-.ordenar{
-	background-image: url('images/cambiar.svg');
-}
-.cambiar,.ordenar{
-	display: inline-block;
-	height: 20px;
-	width: 20px;
-	background-size:cover;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: all .3s ease;
-}
-.cambiar:hover{
-  background-color: rgba(255,255,255,.4);
-  box-shadow: 0 0 0 3px  rgba(255,255,255,.4);
-}
-.ordenar:hover{
-  background-color: rgba(255,255,255,.5);
-   box-shadow: 0 0 0 3px  rgba(255,255,255,.4);
-}
 
-.invisible{
-	right: 0;
-}
 .seleccionado{
 	background-color: #51C28A;
 	color:white;
