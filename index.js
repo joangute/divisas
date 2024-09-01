@@ -127,10 +127,11 @@ function llenarPagina(obj,i){
 	  }
 
     nombre.addEventListener('click', ()=>{
-    	modal.classList.toggle('oculto');
-    	modal.querySelector('h2').textContent=`Cambiar ${obj[i].name} por:`;
-    	modal.style.opacity='1';
     	indice=container.id;
+    	modal.classList.toggle('oculto');
+    	modal.querySelector('h2').textContent=`Cambiar ${obj[indice].name} por:`;
+    	modal.style.opacity='1';
+    	
     });
 
     bandera.addEventListener('click',(e)=>{
@@ -194,8 +195,7 @@ function llenarPagina(obj,i){
 			  	}
         
 			  }
-      	
-      	
+      	 	
       	contador=0;
       }
     });
@@ -282,8 +282,10 @@ function elementosFaltantes(obj,obj2){
 				 			caja.querySelector('.container2>span:nth-child(1)').textContent=obj[faltantes[i]].name;
 				 			caja.querySelector('.container3>span').textContent=obj[faltantes[i]].currency.code;
 				 			caja.querySelector('input').placeholder=obj[faltantes[i]].currency.symbol_native;
-							caja.querySelector('input').value=((caja.querySelector('input').value/obj2.data[obj[indice].currency.code].value)*obj2.data[obj[faltantes[i]].currency.code].value).toFixed(2);
+				 			if(caja.querySelector('input').value!=''){
+				 				caja.querySelector('input').value=((caja.querySelector('input').value/obj2.data[obj[indice].currency.code].value)*obj2.data[obj[faltantes[i]].currency.code].value).toFixed(2);
 				 			
+				 			}
 		     			e.currentTarget.querySelector('.bandera_faltante').style.backgroundImage=`url(${obj[indice].flag})`;
 		     			e.currentTarget.querySelector('.nombre_faltante').textContent=obj[indice].name;
 		     			faltantes[i]=indice;
